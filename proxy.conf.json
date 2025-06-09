@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://playground.phaser.ga.com.br",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

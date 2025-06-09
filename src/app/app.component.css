@@ -1,0 +1,19 @@
+.layout {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.logo {
+  width: 200px; 
+  height: auto; 
+  object-fit: contain; 
+}

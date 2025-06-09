@@ -1,0 +1,26 @@
+<div *ngIf="status$ | async as status">
+  <p>Nome do programa: {{ status.program_name }}</p>
+  <p>Tensão: {{ status.voltage }}</p>
+  <p>Tensão Programada: {{ status.programmed_voltage }}</p>
+  <p>Corrente Programada: {{ status.programmed_current }}</p>
+  <p>Corrente Atual: {{ status.current }}</p>
+  <p>Frequência: {{ status.frequency }}</p>
+  <p>Método de Controle: {{ status.control_method }}</p>
+  <p>Aves na Cuba: {{ status.bird_on_bath }}</p>
+  <p>Velocidade da Linha: {{ status.line_speed }}</p>
+  <p>Contador Parcial: {{ status.partial_count }}</p>
+  <p>Contador Total: {{ status.total_count }}</p>
+  <p>Fator de Fase: {{ status.phaser_factor }}</p>
+  <p>Qualidade do Sinal ICAS: {{ status.signalICASQuality }}</p>
+  <p>Tempo de Atordoamento: {{ status.stunning_time }}</p>
+  <p>Temperatura: {{ status.temperature }}</p>
+  <p>Saída de Tensão: {{ status.voltageOut }}</p>
+  <p>Temperatura do Resfriador: {{ status.temperatureCooler }}</p>
+  <p>ID do Programa: {{ status.programId }}</p>
+  <p>Está Pendente: {{ status.isPending ? 'Sim' : 'Não' }}</p>
+  <p>Data e Hora: {{ status.dateTime | date:'hh:mm':'UTC' }}</p>
+  <p>Horímetro - Horas: {{ status.hourmeter_hours }}</p>
+  <p>Horímetro - Minutos: {{ status.hourmeter_minutes }}</p>
+  <p>ID de Erro: {{ status.errorsID }}</p>
+  <p>Erros: {{ status.error.length ? status.error : 'Nenhum' }}</p>
+</div>
